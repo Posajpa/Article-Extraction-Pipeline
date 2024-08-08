@@ -1,21 +1,4 @@
-import concurrent.futures
-import urllib.robotparser
-import urllib.request
-import urllib.parse
-import pandas as pd
 
-
-def robots_checker(url, user_agent='*', timeout=5):
-    """
-    Check if a URL is allowed to be scraped according to the site's robots.txt file.
-
-    Args:
-        url (str): The URL to check.
-        user_agent (str): The user-agent string to check against the robots.txt file.
-        timeout (int): The timeout for the HTTP request.
-
-    Returns:
-        bool: True if the URL is allowed, False otherwise.
     """
     robots_url = urllib.parse.urljoin(url, '/robots.txt')
     rp = urllib.robotparser.RobotFileParser()
