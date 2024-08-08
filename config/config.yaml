@@ -1,0 +1,16 @@
+# ----------------------------------------------
+topic: "USA Elections"
+# ----------------------------------------------
+keywords: [
+  - "Trump"
+  - "Kamala"
+]
+# ----------------------------------------------
+search_parameters:
+  num_records: 250
+  domain (optional):
+  domain_exact (optional):
+  near (optional):
+  repeat (optional):
+  country (optional):
+  theme (optional):
