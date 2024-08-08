@@ -9,13 +9,14 @@ This project automates the extraction, filtering, and scraping of news articles 
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Configuration](configuration)
-- [Usage](usage)
-- [How It Works](how-it-works)
-- [Code Structure](code-structure)
-- [Contributing](contributing)
-- [License](license)
-- [Contact](contact)
+- [Configuration](#configuration)
+  - [MongoDB Configuration](#mongodb-configuration)
+- [Usage](#usage)
+  - [How It Works](#how-it-works)
+- [Code Structure](#code-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
   
 ## Features
 
@@ -86,6 +87,8 @@ search_parameters:
   theme (optional):
 ```
 
+### MongoDB Configuration
+
 Create another YAML file for your MongoDB URI:
 
 ```yaml
@@ -106,7 +109,7 @@ python main.py <config_file> <key_file>
 - `<config_file>`: Path to your configuration YAML file.
 - `<key_file>`: Path to your MongoDB URI YAML file.
 
-## How It Works
+### How It Works
 
 1. The script begins by fetching articles based on the keywords and search parameters provided.
 2. It checks the articles against `robots.txt` files to ensure scraping is allowed.
