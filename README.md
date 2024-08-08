@@ -10,7 +10,13 @@ This project automates the extraction, filtering, and scraping of news articles 
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Configuration](configuration)
-- 
+- [Usage](usage)
+- [How It Works](how-it-works)
+- [Code Structure](code-structure)
+- [Contributing](contributing)
+- [License](license)
+- [Contact](contact)
+  
 ## Features
 
 - **Keyword-based Article Search**: Fetch articles related to specific keywords within a defined timeframe.
@@ -112,7 +118,7 @@ python main.py <config_file> <key_file>
 - `main.py`: The main entry point for the article extraction pipeline.
 - `fetchers.py`: Contains the logic for fetching articles using the GDELT API.
 - `checkers.py`: Handles robots.txt validation.
-- `crapers.py`: Scrapes content from approved articles using newspaper3k.
+- `scrapers.py`: Scrapes content from approved articles using newspaper3k.
 - `mongodb.py`: Manages interactions with MongoDB, including saving fetched, approved, and scraped articles.
 - `config/`: Contains example configuration files.
 
@@ -126,4 +132,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Contact
 
-If you have any questions, please reach out to [posajpa@gmail.com].
+If you have any questions, please reach out to posajpa@gmail.com.
