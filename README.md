@@ -1,4 +1,4 @@
-# Article Extraction Pipeline
+# News Article Data Collection Pipeline
 
 ## Overview
 
